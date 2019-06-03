@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @campground.name %>
+</p>
+
+<p>
+  <strong>Total sites:</strong>
+  <%= @campground.total_sites %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @campground.address %>
+</p>
+
+<p>
+  <strong>Dates open:</strong>
+  <%= @campground.dates_open %>
+</p>
+
+<p>
+  <strong>Directions:</strong>
+  <%= @campground.directions %>
+</p>
+
+<p>
+  <strong>Contact info:</strong>
+  <%= @campground.contact_info %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @campground.description %>
+</p>
+
+<p>
+  <strong>Electric:</strong>
+  <%= @campground.electric %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @campground.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @campground.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_campground_path(@campground) %> |
+<%= link_to 'Back', campgrounds_path %>

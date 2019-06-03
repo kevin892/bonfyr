@@ -1,0 +1,67 @@
+<%= form_with(model: campground, local: true) do |form| %>
+  <% if campground.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(campground.errors.count, "error") %> prohibited this campground from being saved:</h2>
+
+      <ul>
+      <% campground.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_sites %>
+    <%= form.number_field :total_sites %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dates_open %>
+    <%= form.text_field :dates_open %>
+  </div>
+
+  <div class="field">
+    <%= form.label :directions %>
+    <%= form.text_area :directions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_info %>
+    <%= form.text_field :contact_info %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :electric %>
+    <%= form.check_box :electric %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

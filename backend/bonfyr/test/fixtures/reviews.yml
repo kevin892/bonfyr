@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  campground: one
+  picture: MyString
+  review_content: MyText
+  rating: 1
+
+two:
+  user: two
+  campground: two
+  picture: MyString
+  review_content: MyText
+  rating: 1
